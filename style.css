@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f6f8ff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 730px;
+  height: 38px;
+  width: 100%;
+}
+
+#head_tex {
+  font-family: Space Mono;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 38.51px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #222731;
+}
+
+#DARK_btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  width: 78px;
+  background-color: transparent;
+}
+
+.dark_mode_tex {
+  font-family: Space Mono;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19.25px;
+  letter-spacing: 2.5px;
+  text-align: right;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #222731;
+}
+
+#icone_moon {
+  width: 20px;
+  height: 20px;
+}
+
+#section_serch {
+  margin-top: 15px;
+  padding: 20px;
+  max-width: 730px;
+  height: 69px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  background-color: #fefefe;
+}
+
+.icone_serch {
+  width: 24.06px;
+  height: 24px;
+}
+
+.input {
+  max-width: 400px;
+  width: 100%;
+  border: none;
+  padding: 20px;
+  font-family: Space Mono;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  background-color: transparent;
+}
+
+#search-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 106px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #0079ff;
+  color: #fff;
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23.7px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+#search_user {
+  max-width: 730px;
+  height: 419px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  background-color: #fefefe;
+  border-radius: 10px;
+  flex-direction: row;
+  margin-top: 15px;
+  padding-top: 30px;
+  padding: 20px;
+}
+
+#user_photo {
+  width: 117px;
+  height: 117px;
+  border-radius: 50%;
+  
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+ 
+
+}
+
+#user_name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#user_hedder {
+  max-width: 480px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#data {
+  font-family: Space Mono;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.22px;
+  text-align: right;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #697c9a;
+  width: 300px;
+  
+}
+#bio{
+  font-family: Space Mono;
+font-size: 15px;
+font-weight: 400;
+line-height: 25px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+max-width: 480px;
+width: 100%;
+display: flex;
+justify-content: start;
+align-items: center;
+}
+#user_namee {
+  font-family: Space Mono;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 38.51px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #2b3442;
+}
+#usertexx {
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.7px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #0079ff;
+}
+.folower_style {
+  font-family: Space Mono;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.25px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.icone_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 480px;
+  width: 100%;
+  gap: 30px;
+}
+.icone {
+  display: flex;
+  justify-content: space-between;
+  max-width: 480px;
+  width: 100%;
+  align-items: center;
+}
+.user_followers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 480px;
+  height: 85px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #f6f8ff;
+  padding: 10px;
+}
+.num_follow {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.icone_tex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icone_paragraph {
+  font-family: Space Mono;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.22px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #4b6a9b;
+}
+
+.error{
+  color: red;
+}
+
+body.dark {
+  background-color: #141d2f;
+  color: #ffffff;
+}
+
+body.dark header {
+  background-color: #141d2f;
+  color: #ffffff;
+}
+body.dark #head_tex{
+  color: #fff;
+}
+body.dark #DARK_btn {
+  background-color: #141d2f;
+  color: #ffffff;
+}
+
+body.dark #DARK_btn .dark_mode_tex {
+  color: #ffffff;
+}
+
+body.dark #DARK_btn .icone_moon {
+  background-color: #1e2a47;
+}
+
+body.dark #section_serch {
+  background-color: #1e2a47;
+ 
+  border: none;
+}
+
+
+
+body.dark #search-btn {
+  background-color: #0079ff;
+  color: #ffffff;
+  border: none;
+}
+
+body.dark #search_user {
+  background-color: #1e2a47;
+}
+body.dark #user_namee{
+  color: #ffffff;
+}
+body.dark .user_followers {
+  background-color: #141d2f;
+  color: #ffffff;
+}
+
+body.dark .num_follow h2 {
+  color: #ffffff;
+}
+
+body.dark .icone_tex {
+  color: #ffffff;
+}
+
+body.dark .icone_paragraph {
+  color: #ffffff;
+}
+
+
+@media (max-width:600px) {
+  .icone_div{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
