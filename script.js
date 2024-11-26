@@ -22,9 +22,11 @@ async function fetchUserData(username) {
   const data = await response.json();
   if (data.message === "Not Found") {
     noresult.textContent = "No results"; 
+    
     noresult.classList.add("error"); 
     return; 
   }
+  
   
 
   userPhoto.src = data.avatar_url;
@@ -64,10 +66,14 @@ searchInput.addEventListener("keydown", (event) => {
 
 if (localStorage.getItem("darkMode") === "true") {
   document.body.classList.add("dark");
- 
+  ligtht.src = "./images/002-sun.png";
+  darkh1.textContent = "light"
 }
+
 darkModeBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark");
-  localStorage.setItem("darkMode", document.body.classList.contains("dark"));
-  img.src = "002-sun.png"; 
+  const isDarkMode = document.body.classList.contains("dark");
+  localStorage.setItem("darkMode", isDarkMode);
+  ligtht.src = isDarkMode ? "./images/002-sun.png" : "./images/moon.svg";
+  darkh1.textContent = isDarkMode? " light" : "dark"
 });
