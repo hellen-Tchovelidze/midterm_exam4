@@ -236,6 +236,7 @@ align-items: center;
   max-width: 480px;
   width: 100%;
   gap: 30px;
+  margin-top: 20px;
 }
 .icone {
   display: flex;
@@ -481,6 +482,7 @@ width: 100%;
   flex-wrap: wrap;
   display: flex;
   gap: 10px;
+  height: auto;
 }
 #section_serch{
   max-width: 527px;
