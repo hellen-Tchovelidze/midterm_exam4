@@ -265,6 +265,10 @@ display: flex;
 width: 98px;
 justify-content: space-between;
 }
+.imgicone{
+  width: 20px;
+  height: 20px;
+}
 
 .icone_paragraph {
   font-family: Space Mono;
