@@ -230,7 +230,7 @@ align-items: center;
 }
 .icone_div {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   max-width: 480px;
@@ -262,6 +262,8 @@ align-items: center;
 }
 .icone_tex {
 display: flex;
+width: 98px;
+justify-content: space-between;
 }
 
 .icone_paragraph {
@@ -343,6 +345,9 @@ body.dark .icone_paragraph {
 
 
 @media (max-width:600px) {
+  header{
+    padding: 10px;
+  }
  
   #user_namee{
     font-family: Space Mono;
@@ -382,6 +387,7 @@ text-decoration-skip-ink: none;
     display: flex;
     justify-content: start;
     align-items: start;
+    gap: 10px;
   }
   #bio{
     font-family: Space Mono;
@@ -447,9 +453,16 @@ text-decoration-skip-ink: none;
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 0px;
+  gap: 10px;
 }
 .icone{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+}
+.hedder_div{
   display: flex;
   flex-direction: column;
 }
@@ -463,6 +476,13 @@ width: 100%;
 #search_user{
   flex-wrap: wrap;
   display: flex;
+  gap: 10px;
+}
+#section_serch{
+  max-width: 527px;
+  height: 60px;
+width: 100%;
+  
 }
 }
 
