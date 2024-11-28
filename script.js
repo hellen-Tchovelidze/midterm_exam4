@@ -1,6 +1,6 @@
 let darkModeBtn = document.getElementById("DARK_btn");
-let ligtht = document.getElementById("icone_moon")
-let darkh1 = document.getElementById("darkh1")
+let ligtht = document.getElementById("icone_moon");
+let darkh1 = document.getElementById("darkh1");
 let searchInput = document.getElementById("username");
 let searchBtn = document.getElementById("search-btn");
 let userPhoto = document.getElementById("user_photo");
@@ -8,7 +8,7 @@ let userName = document.getElementById("user_namee");
 let userTexx = document.getElementById("usertexx");
 let joinDate = document.getElementById("data");
 let bio = document.getElementById("bio");
-let noresult = document.getElementById("noresult")
+let noresult = document.getElementById("noresult");
 let repos = document.getElementById("Repos");
 let followers = document.getElementById("Followers");
 let following = document.getElementById("Following");
@@ -21,13 +21,13 @@ async function fetchUserData(username) {
   const response = await fetch(`https://api.github.com/users/${username}`);
   const data = await response.json();
   if (data.message === "Not Found") {
-    noresult.textContent = "No results"; 
-    
-    noresult.classList.add("error"); 
-    return; 
+    noresult.textContent = "No results";
+
+    noresult.classList.add("error");
+    return;
+  } else {
+    noresult.textContent = "";
   }
-  
-  
 
   userPhoto.src = data.avatar_url;
   userName.textContent = data.name;
@@ -62,12 +62,13 @@ searchInput.addEventListener("keydown", (event) => {
     if (username) {
       fetchUserData(username);
     }
-} })
+  }
+});
 
 if (localStorage.getItem("darkMode") === "true") {
   document.body.classList.add("dark");
   ligtht.src = "./images/002-sun.png";
-  darkh1.textContent = "light"
+  darkh1.textContent = "light";
 }
 
 darkModeBtn.addEventListener("click", () => {
@@ -75,5 +76,5 @@ darkModeBtn.addEventListener("click", () => {
   const isDarkMode = document.body.classList.contains("dark");
   localStorage.setItem("darkMode", isDarkMode);
   ligtht.src = isDarkMode ? "./images/002-sun.png" : "./images/moon.svg";
-  darkh1.textContent = isDarkMode? " light" : "dark"
+  darkh1.textContent = isDarkMode ? " light" : "dark";
 });
